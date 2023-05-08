@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="Teacher" table="Teacher">
+
+          <!-- 主键教师编号 -->
+          <id name="teacherNo" type="string" length="20">
+            <generator class="assigned"/>
+          </id>
+
+          <!-- 简单字符串属性: 登录密码 -->
+          <property
+            name="password"
+            column="password"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 姓名 -->
+          <property
+            name="name"
+            column="name"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 性别 -->
+          <property
+            name="sex"
+            column="sex"
+            type="string"
+            length="4"
+          />
+
+          <!-- 简单整型属性: 年龄 -->
+          <property
+            name="age"
+            column="age"
+            type="int"
+
+          />
+
+          <!-- 简单日期型属性: 入职日期 -->
+          <property
+            name="comeDate"
+            column="comeDate"
+            	type="timestamp"
+            	length="10"
+          />
+
+          <!-- 简单字符串属性: 职称 -->
+          <property
+            name="postName"
+            column="postName"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 联系电话 -->
+          <property
+            name="telephone"
+            column="telephone"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 教师简介 -->
+          <property
+            name="teacherDesc"
+            column="teacherDesc"
+            type="string"
+            length="2000"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 
